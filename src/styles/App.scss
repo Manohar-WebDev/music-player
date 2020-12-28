@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Langar", cursive;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(58, 58, 58);
+}
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";

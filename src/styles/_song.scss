@@ -1,0 +1,25 @@
+.song-container {
+  //text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //background-color: rgb(230, 218, 218);
+  min-height: 50vh;
+  width: 100%;
+  margin-top: 5rem;
+
+  img {
+    width: 20%;
+    border-radius: 10%;
+  }
+  h2 {
+    padding: 3rem 1rem 1rem 1rem;
+    //background-color: rgb(217, 243, 234);
+    font-size: 1.5rem;
+  }
+  h3 {
+    // background-color: rgb(221, 214, 204);
+    font-size: 1rem;
+  }
+}

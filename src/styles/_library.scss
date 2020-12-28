@@ -1,0 +1,63 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: lightcyan;
+  box-shadow: 2px 2px 50px black;
+  overflow: scroll;
+  transition: all 1s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+
+  h2 {
+    padding: 2rem;
+  }
+}
+
+.library-container {
+  display: flex;
+  padding: 2rem 0rem 2rem 2rem;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: lightblue;
+  }
+  img {
+    width: 30%;
+  }
+  .songinfo {
+    padding: 0rem 0rem 0rem 1.5rem;
+  }
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+.selected {
+  background: violet;
+}
+
+.minimise {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
